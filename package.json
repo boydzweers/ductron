@@ -23,10 +23,10 @@
 	],
 	"author": "Boyd Zweers <boydzweers46@gmail.com>",
 	"license": "ISC",
-	"homepage": "https://github.com/boydzweers/UI5XMLValidator",
+	"homepage": "https://github.com/boydzweers/ductron",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:boydzweers/UI5XMLValidator.git"
+		"url": "git@github.com:boydzweers/ductron.git"
 	},
 	"bugs": {
 		"url": "https://github.com/boydzweers/UI5XMLValidator/issues"
@@ -36,7 +36,6 @@
 		"clear": "^0.1.0",
 		"esm": "^3.2.25",
 		"figlet": "^1.5.0",
-		"require-dot-file": "^0.4.0",
 		"xml-js": "^1.6.11",
 		"yargs": "^16.2.0"
 	},
