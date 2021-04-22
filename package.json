@@ -1,5 +1,5 @@
 {
-	"name": "@boydzweers/ductron",
+	"name": "ductron",
 	"version": "1.0.0",
 	"description": "Scan your UI5 XML views for unused namespaces",
 	"bin": {
