@@ -1,5 +1,3 @@
-![Linting](https://github.com/boydzweers/UI5XMLValidator/workflows/ESLint/badge.svg)
-
 # Ductron
 
 ## _Keep your xml files lean and clean_
