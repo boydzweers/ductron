@@ -29,7 +29,7 @@
 		"url": "git@github.com:boydzweers/ductron.git"
 	},
 	"bugs": {
-		"url": "https://github.com/boydzweers/UI5XMLValidator/issues"
+		"url": "https://github.com/boydzweers/ductron/issues"
 	},
 	"dependencies": {
 		"chalk": "^4.1.0",
