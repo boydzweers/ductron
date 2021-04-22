@@ -1,0 +1,47 @@
+{
+	"name": "@boydzweers/ductron",
+	"version": "1.0.0",
+	"description": "Scan your UI5 XML views for unused namespaces",
+	"bin": {
+		"@boydzweers/ductron": "bin/ductron",
+		"ductron": "bin/ductron"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"lib/**/*"
+	],
+	"scripts": {
+		"eslint": "eslint .",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\""
+	},
+	"keywords": [
+		"ui5",
+		"sap",
+		"xml validation"
+	],
+	"author": "Boyd Zweers <boydzweers46@gmail.com>",
+	"license": "ISC",
+	"homepage": "https://github.com/boydzweers/UI5XMLValidator",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:boydzweers/UI5XMLValidator.git"
+	},
+	"bugs": {
+		"url": "https://github.com/boydzweers/UI5XMLValidator/issues"
+	},
+	"dependencies": {
+		"chalk": "^4.1.0",
+		"clear": "^0.1.0",
+		"esm": "^3.2.25",
+		"figlet": "^1.5.0",
+		"require-dot-file": "^0.4.0",
+		"xml-js": "^1.6.11",
+		"yargs": "^16.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.21.0",
+		"prettier": "^2.2.1"
+	}
+}

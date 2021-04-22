@@ -1,0 +1,89 @@
+// 20210310115107
+// https://raw.githubusercontent.com/Alliander/AIMS/master/js/.eslintrc?token=AFDBV7TCYLZG2TNDLXFSURTAKHPRW
+
+{
+	"env": {
+		"es6": true,
+		"node": true,
+		"jasmine": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"extends": ["eslint:recommended"],
+	"rules": {
+		"indent": ["error", "tab"],
+		"new-cap": 0,
+		"camelcase": "warn",
+		"curly": "error",
+		// "no-console": "warn", CLI Application
+		"no-debugger": "warn",
+		"no-mixed-spaces-and-tabs": "warn",
+		"no-empty": [
+			"error",
+			{
+				"allowEmptyCatch": true
+			}
+		],
+		"no-alert": "error",
+		"array-callback-return": "error",
+		"dot-notation": "error",
+		"eqeqeq": ["error", "smart"],
+		"no-caller": "error",
+		"no-else-return": "error",
+		"no-eval": "error",
+		"no-extend-native": "error",
+		"no-extra-bind": "error",
+		"no-implied-eval": "error",
+		"no-iterator": "error",
+		"no-labels": "error",
+		"no-lone-blocks": "error",
+		"no-multi-str": "error",
+		"no-new-func": "error",
+		"no-new-wrappers": "error",
+		"no-octal-escape": "error",
+		"no-proto": "error",
+		"no-return-await": "error",
+		"no-script-url": "error",
+		"no-self-compare": "error",
+		"no-sequences": "error",
+		"no-unmodified-loop-condition": "error",
+		"no-useless-call": "error",
+		"no-useless-return": "error",
+		"no-with": "error",
+		"yoda": [
+			"error",
+			"never",
+			{
+				"onlyEquality": true
+			}
+		],
+		"strict": "error",
+		"no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "_",
+				"varsIgnorePattern": "_"
+			}
+		],
+		"no-undef-init": "error",
+		"no-use-before-define": ["error", "nofunc"],
+		"callback-return": "error",
+		"handle-callback-err": "error",
+		"no-buffer-constructor": "error",
+		"no-new-require": "error",
+		"no-path-concat": "error",
+		"no-duplicate-imports": "error",
+		"no-useless-computed-key": "error",
+		"no-useless-constructor": "error",
+		"no-useless-rename": "error",
+		"no-var": "error",
+		"object-shorthand": "error",
+		"prefer-arrow-callback": "warn",
+		"prefer-numeric-literals": "error",
+		"prefer-template": "error",
+		"prefer-spread": "error",
+		"prefer-rest-params": "error",
+		"prefer-const": "error"
+	}
+}

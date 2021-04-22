@@ -1,0 +1,6 @@
+{
+	"startPath": "./",
+	"exclude": ["node_modules", ".git"],
+	"fix": false,
+	"report": false
+}

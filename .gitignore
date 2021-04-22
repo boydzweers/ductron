@@ -1,0 +1,6 @@
+node_modules
+test_files/**/*
+.ui5xv.json
+init.sh
+package-lock.json
+/lib
