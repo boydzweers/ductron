@@ -87,13 +87,12 @@ function remove(obj, key) {
 	return false;
 }
 
-function scan(path, fix, lastScan) {
-	console.log(lastScan);
+function scan(path, fix) {
 	const xmlObject = _xmlToObj(path);
 	const namespacesUsage = getNamespaceUsage(xmlObject);
 	const [_used, unused] = notify(namespacesUsage);
 
-	log(`-- found: ${chalk.red(path)} -- Needs fix: ${unused.length > 0 ? 'yes' : 'no'}`);
+	log(`-- found: ${chalk.green(path)} -- Needs fix: ${unused.length > 0 ? 'yes' : 'no'}`);
 	if (unused.length > 0) {
 		if (fix === true) {
 			log(chalk.blue(`Fixing file: ${path} for unused namespace(s) ${unused.join(',')}`));
@@ -101,10 +100,6 @@ function scan(path, fix, lastScan) {
 			const xml = _objToXml(newObject, path);
 			fixit(xml, path);
 		}
-	}
-
-	if (lastScan) {
-		console.log('DONE');
 	}
 }
 
@@ -118,8 +113,13 @@ function scanForXmlFiles(
 	filter = '.xml',
 	init = true,
 ) {
-	if (!fs.existsSync(startPath) || exclude.includes(startPath)) {
-		log("-- Directory doesn't exist or its excluded:", chalk.red(startPath));
+	if (!fs.existsSync(startPath)) {
+		log("Specified directory doesn't exist: ", chalk.green(startPath));
+		return;
+	}
+
+	if (exclude.includes(startPath)) {
+		if (report === true) log(`Path ${chalk.green(startPath)} is exluded for scanning`);
 		return;
 	}
 
